@@ -1,0 +1,41 @@
+{
+  "name": "reason-pure-component",
+  "version": "0.0.1",
+  "description": "A PureComponent implementation for ReasonReact",
+  "main": "PureComponent.re",
+  "files": [
+    "src/",
+    "bsconfig.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "bsb -make-world -clean-world",
+    "watch": "bsb -make-world -clean-world -w",
+    "release": "release-it",
+    "test": "jest"
+  },
+  "keywords": [
+    "bucklescript",
+    "reason",
+    "react",
+    "reasonreact",
+    "bsb",
+    "pure",
+    "memo"
+  ],
+  "author": "benadamstyles",
+  "license": "MIT",
+  "homepage": "https://github.com/benadamstyles/reason-pure-component",
+  "repository": "https://github.com/benadamstyles/reason-pure-component",
+  "bugs": "https://github.com/benadamstyles/reason-pure-component/issues",
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.7",
+    "bs-platform": "^4.0.18",
+    "bs-react-testing-library": "^0.4.0",
+    "jest": "^24.1.0",
+    "release-it": "^10.1.0"
+  },
+  "dependencies": {
+    "reason-react": "^0.5.3"
+  }
+}

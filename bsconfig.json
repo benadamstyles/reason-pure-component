@@ -1,0 +1,10 @@
+{
+  "name": "reason-pure-component",
+  "sources": ["src", {"dir": "__tests__", "type": "dev"}],
+  "bs-dev-dependencies": ["@glennsl/bs-jest", "bs-react-testing-library"],
+  "bs-dependencies": ["reason-react"],
+  "reason": {
+    "react-jsx": 2
+  },
+  "refmt": 3
+}
