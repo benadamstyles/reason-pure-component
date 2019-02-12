@@ -1,6 +1,10 @@
-lib/*
-node_modules
+/lib/*
+/node_modules/
 .bsb.lock
 .merlin
 
-!lib/js/__tests__/__snapshots__/*
+!/lib/js/
+/lib/js/*
+!/lib/js/__tests__/
+/lib/js/__tests__/*
+!/lib/js/__tests__/__snapshots__/

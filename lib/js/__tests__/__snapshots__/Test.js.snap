@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PureComponent renders correctly 1`] = `
+<div>
+  <p>
+    Top
+  </p>
+  <p>
+    Sub
+  </p>
+</div>
+`;
