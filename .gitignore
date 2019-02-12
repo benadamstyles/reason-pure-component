@@ -1,4 +1,6 @@
-lib
+lib/*
 node_modules
 .bsb.lock
 .merlin
+
+!lib/js/__tests__/__snapshots__/*
