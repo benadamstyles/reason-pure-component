@@ -6,6 +6,6 @@ install:
   - npm ci
 before_script:
   - npm run build
-  - git status
+  - git checkout -- .
 script:
   - npm test
