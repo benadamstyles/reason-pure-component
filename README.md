@@ -2,6 +2,8 @@
 
 A PureComponent implementation for ReasonReact. Simplify your `shouldUpdate`!
 
+> **NOTE** this library is not currently compatible with `genType`. Follow [#1](https://github.com/benadamstyles/reason-pure-component/issues/1) for updates.
+
 ## Installation
 
 ```sh
