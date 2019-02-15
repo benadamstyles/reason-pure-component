@@ -1,4 +1,4 @@
-# ReasonPureComponent
+# reason-pure-component
 
 A PureComponent implementation for ReasonReact. Simplify your `shouldUpdate`!
 
@@ -19,7 +19,7 @@ npm install reason-pure-component
 
 ## Usage
 
-Using ReasonPureComponent doesn't result in fewer lines of code, necessarily. The benefit is in the abstraction of how you compare `oldSelf.retainedProps` and `newSelf.retainedProps`. You simply define an equality function – in this case `==` . Thanks to the OCaml type system, if you forget to define any of the required configuration, the program will not compile – whereas if you use `ReasonReact.statelessComponentWithRetainedProps` directly, and forget to define `shouldUpdate`, no one is any the wiser.
+Using reason-pure-component doesn't result in fewer lines of code, necessarily. The benefit is in the abstraction of how you compare `oldSelf.retainedProps` and `newSelf.retainedProps`. You simply define an equality function – in this case `==` . Thanks to the OCaml type system, if you forget to define any of the required configuration, the program will not compile – whereas if you use `ReasonReact.statelessComponentWithRetainedProps` directly, and forget to define `shouldUpdate`, no one is any the wiser.
 
 ```diff
 + module Config = {
@@ -36,7 +36,7 @@ Using ReasonPureComponent doesn't result in fewer lines of code, necessarily. Th
 -      "Breadcrumb"
 -    );
 
-+ module Pure = ReasonPureComponent.Stateless(Config);
++ module Pure = PureComponent.Stateless(Config);
 
 let make = (~view, ~subview=?, _children) => {
 -  ...component,
