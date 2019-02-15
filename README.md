@@ -2,8 +2,6 @@
 
 A PureComponent implementation for ReasonReact. Simplify your `shouldUpdate`!
 
-> **NOTE** this library is not currently compatible with `genType`. Follow [#1](https://github.com/benadamstyles/reason-pure-component/issues/1) for updates.
-
 ## Installation
 
 ```sh
@@ -61,4 +59,14 @@ let make = (~view, ~subview=?, _children) => {
       </p>
     </div>,
 };
+```
+
+## Known issues
+
+### [genType](https://github.com/cristianoc/genType) compatibility
+
+**genType** assumes your component exports its `component` record. Therefore, in the above example, you need to add the following line:
+
+```reason
+let component = Pure.component;
 ```
