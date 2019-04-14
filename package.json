@@ -35,7 +35,7 @@
     "jest": "^24.1.0",
     "release-it": "^10.1.0"
   },
-  "dependencies": {
+  "peerDependencies": {
     "reason-react": "^0.5.3"
   }
 }
