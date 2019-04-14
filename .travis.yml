@@ -4,6 +4,7 @@ node_js:
 cache: npm
 install:
   - npm ci
+  - npm i --no-save reason-react
 before_script:
   - npm run build
   - git checkout -- .
